@@ -249,13 +249,13 @@ mark { background: color-mix(in srgb, var(--brand) 22%, transparent); color: inh
 .map-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 0; padding: 0; list-style: none; font-size: 12.5px; color: var(--text-3); }
 .map-legend li { display: inline-flex; align-items: center; gap: 6px; }
 .swatch { width: 14px; height: 14px; border: 1px solid var(--border); }
+.map-legend .swatch + .swatch { margin-left: -4px; }
 .map-cols { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
-.map-col h3, .map-gov h3 { margin: 0 0 8px; padding-top: 8px; border-top: 4px solid var(--text); font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
+.map-col h3, .map-gov h3 { margin: 0 0 8px; padding-top: 8px; border-top: 4px solid var(--accent, var(--text)); font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
 .map-caps { display: grid; gap: 8px; }
 .map-gov { margin-top: 14px; }
-.map-gov h3 { border-top-color: #10B981; }
 .map-gov .map-caps { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-.cap { display: flex; flex-direction: column; justify-content: space-between; gap: 10px; min-height: 76px; padding: 10px 12px; text-align: left;
+.cap { display: flex; flex-direction: column; justify-content: space-between; gap: 8px; min-height: 68px; padding: 10px 12px; text-align: left;
   border: 1px solid var(--border); background: var(--surface-2); color: var(--text); font: inherit; cursor: pointer; transition: transform .1s ease, box-shadow .1s ease; }
 .cap:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 4px 14px rgba(0, 0, 0, .12); }
 .cap:disabled { cursor: default; color: var(--text-3); }
